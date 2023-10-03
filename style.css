@@ -1,74 +1,101 @@
-*{
-    margin: 0%;
+/* Resetting some default styles */
+* {
+    margin: 0;
     font-family: 'Lato', sans-serif;
 }
-h2{
+
+/* Center-align all h2 elements */
+h2 {
     text-align: center;
 }
-.BRO{
+
+/* Style for elements with class .BRO */
+.BRO {
     font: bold 35px/39px 'Lato';
     color: #70CD00;
     flex-wrap: wrap;
     height: auto;
 }
-header{
-    padding: 5px;
-    background-color:rgba(217, 217, 217, 0.372);
-    border: 1px solid #ddd;
-    text-align: center;
-    height: auto;
-    flex-wrap: wrap;
-}
-.img{
+
+/* Styles for elements with class .img */
+.img {
     flex-wrap: wrap;
     min-width: 70px;
     max-width: 140px;
     min-height: auto;
 }
 
-.container{
-    padding: 20px;
+/* Styles for the body */
+body {
+    background-color: rgb(237, 236, 236);
+}
+
+/* Styles for the main content container */
+.container {
+    margin: 40px;
+    padding: 30px;
     flex-wrap: wrap;
     border: 1px solid #ddd;
-    background-color: rgba(228, 228, 228, 0.39);
+    background-color: rgb(255, 255, 255);
 }
-nav{
+
+/* Styles for the navigation bar */
+nav {
     background-color: #70CD00;
-    display: block;
     text-align: center;
     padding: 5px;
-    position: top fixed;
-    top: 0;
+    position: sticky;
+    top: 0; /* Adjust this value as needed */
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    z-index: 100; /* Add this to ensure the navigation bar stays above content */
 }
-li{
+
+/* Styles for the header */
+header {
+    padding: 5px;
+    background-color: rgba(217, 217, 217, 0.372);
+    border: 1px solid #ddd;
+    text-align: center;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+
+/* Styles for list items in the navigation menu */
+li {
     float: left;
     background-color: #70CD00;
     padding: 5px;
 }
+
+/* Hover effect for navigation menu links */
 li a:hover {
     background-color: rgb(161, 161, 161);
 }
-ul{
+
+/* Styles for unordered lists in the navigation menu */
+ul {
     align-items: center;
     list-style: none;
     background-color: #70CD00;
 }
-  a {
+
+/* Styles for navigation menu links */
+a {
     display: block;
     width: auto;
     height: auto;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
-  }
+}
 
-
-footer{
+/* Styles for the footer */
+footer {
     text-align: center;
     background-color: rgba(221, 221, 221, 0.664);
     padding: 20px;
