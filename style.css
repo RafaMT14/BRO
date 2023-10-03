@@ -17,7 +17,6 @@ header{
     border: 1px solid #ddd;
     text-align: center;
     height: auto;
-    padding-top: 64px;
     flex-wrap: wrap;
 }
 .img{
@@ -38,7 +37,7 @@ nav{
     display: block;
     text-align: center;
     padding: 5px;
-    position: fixed;
+    position: top;
     top: 0;
     width: 100%;
     display: flex;
