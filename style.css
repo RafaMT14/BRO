@@ -37,7 +37,7 @@ nav{
     display: block;
     text-align: center;
     padding: 5px;
-    position: top;
+    position: top fixed;
     top: 0;
     width: 100%;
     display: flex;
