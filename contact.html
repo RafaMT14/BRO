@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Martian+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Design sem nome.png">
+    <link href="style.css" rel="stylesheet">
+    <title>BRO-Comprar</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#prod">Produtos</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="contact.html" >Contato</a></li>
+        </ul>
+    </nav>
+<header>
+    <img class="img" src="Design sem nome (2).png" width="14%">
+    <br>
+    <p class="BRO">
+        BRO
+    </p>
+</header>
+    <div class="container">
+        <div class="contact-info" style="margin-bottom: 0;">
+            <h2><strong>Email:</strong></h2> <p><a href="mailto:contato@brofiltros.com">contato@brofiltros.com</a></p>
+            <p><strong>Telefone:</strong> +55 (11) 3674-6051</p>
+        </div>
+        <div class="contact-form" style="margin-top: 0;">
+            <h3>Formulário de Contato</h3>
+            <p>Envie-nos uma mensagem diretamente preenchendo o formulário abaixo:</p>
+            <form id="contact-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <p id="mensagem-enviada" style="display: none; margin-top: 20px;">Mensagem Enviada!</p>
+        </div>
+    </div>
+<footer>
+    <p>&copy 2023 direitos reservados. BRO filtros.</p>
+</footer>
+<script>
+    var userAgent = navigator.userAgent.toLowerCase();
+
+        if (userAgent.indexOf('chrome') > -1) {
+        // Ações específicas para o Chrome
+        document.body.style.backgroundColor = '';
+        } else if (userAgent.indexOf('firefox') > -1) {
+        // Ações específicas para o Firefox
+        document.body.style.backgroundColor = '';
+        } else if (userAgent.indexOf('safari') > -1) {
+        // Ações específicas para o Safari
+        document.body.style.backgroundColor = '';
+        } else if (userAgent.indexOf('opera') > -1 || userAgent.indexOf('opr') > -1) {
+        // Ações específicas para o Opera
+        document.body.style.backgroundColor = '';
+        } else {
+        // Ações para outros navegadores
+        document.body.style.backgroundColor = 'white';
+        }
+        const form = document.getElementById("contact-form");
+        const mensagemEnviada = document.getElementById("mensagem-enviada");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); 
+            mensagemEnviada.style.display = "block"; 
+            form.reset(); 
+        });
+</script>
+</body>
+</html>
