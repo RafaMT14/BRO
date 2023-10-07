@@ -47,6 +47,26 @@ main p{
     padding: 10px;
 }
 
+.grid-sum{
+    grid: repeat(2, 60px) / auto-flow 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+ 
+.grid-sum img{
+    display: block;
+    block-size: auto;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: auto;
+    max-height: auto;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .container {
     margin: 40px;
     padding: 30px;
@@ -136,11 +156,6 @@ footer {
     padding: 20px;
 }
 
-
-
-
-
-/* Estilos para a seção de formulário de contato */
 .contact-form {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -193,7 +208,6 @@ footer {
     background-color: #4bb300;
 }
 
-/* Estilos para a seção de informações de contato */
 .contact-info {
     padding: 20px;
     margin-top: 0;
