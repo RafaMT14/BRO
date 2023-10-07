@@ -65,6 +65,13 @@ main p{
     max-height: auto;
     padding: 10px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+}
+
+.grid-sum div{
+    border: #ddd solid 2px;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
 .container {
