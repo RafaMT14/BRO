@@ -283,6 +283,15 @@ footer {
     max-width: 1300px;
 }
 
+@media (max-width: 768px) {
+    /* Rafa ajuste o width para ficar maior */
+    .image-grid {
+        width: 85%;
+            height: auto;
+            margin-right: 1rem;
+    }
+}
+
 .sed-img{
     max-width: 100%;
     height: auto;
